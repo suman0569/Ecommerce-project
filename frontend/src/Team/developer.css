@@ -1,0 +1,470 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.developer-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 70px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(99, 102, 241, 0.25),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(6, 182, 212, 0.2),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #111827,
+      #172554
+    );
+}
+
+
+/* Main Card */
+
+.developer-card {
+  width: 100%;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 60px;
+
+  padding: 55px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(20px);
+}
+
+
+/* Image Section */
+
+.developer-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-glow {
+  position: relative;
+  padding: 8px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #06b6d4,
+    #8b5cf6
+  );
+
+  box-shadow:
+    0 0 40px rgba(99, 102, 241, 0.5);
+}
+
+.developer-image {
+  width: 290px;
+  height: 290px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 50%;
+
+  border: 7px solid #111827;
+
+  transition: 0.4s ease;
+}
+
+.developer-image:hover {
+  transform: scale(1.03);
+}
+
+
+/* Available Badge */
+
+.available-badge {
+  margin-top: 25px;
+
+  padding: 10px 18px;
+
+  color: #a7f3d0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  background: rgba(16, 185, 129, 0.1);
+
+  border: 1px solid rgba(16, 185, 129, 0.3);
+
+  border-radius: 30px;
+}
+
+.available-badge span {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  margin-right: 8px;
+
+  border-radius: 50%;
+
+  background: #10b981;
+
+  box-shadow: 0 0 10px #10b981;
+}
+
+
+/* Content */
+
+.developer-content {
+  color: white;
+}
+
+.developer-label {
+  margin-bottom: 12px;
+
+  color: #67e8f9;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.developer-content h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.developer-content h1 span {
+  color: #67e8f9;
+}
+
+.developer-content h2 {
+  margin: 15px 0 20px;
+
+  color: #cbd5e1;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.developer-description {
+  max-width: 650px;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* Developer Information */
+
+.developer-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color: rgba(103, 232, 249, 0.3);
+}
+
+.info-icon {
+  font-size: 23px;
+}
+
+.info-item small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.info-item strong {
+  color: #e2e8f0;
+
+  font-size: 14px;
+}
+
+
+/* Skills */
+
+.skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.skills span {
+  padding: 8px 15px;
+
+  color: #a5f3fc;
+
+  font-size: 13px;
+
+  border-radius: 20px;
+
+  background: rgba(6, 182, 212, 0.08);
+
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+
+/* Buttons */
+
+.developer-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.contact-button,
+.portfolio-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 14px 24px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+/* Contact */
+
+.contact-button {
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #06b6d4
+  );
+
+  box-shadow:
+    0 10px 25px rgba(6, 182, 212, 0.25);
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(6, 182, 212, 0.4);
+}
+
+.contact-button span {
+  font-size: 18px;
+}
+
+
+/* Portfolio */
+
+.portfolio-button {
+  color: #cbd5e1;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-button:hover {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  transform: translateY(-3px);
+}
+
+
+/* Social Links */
+
+.social-links {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: white;
+
+  background: #06b6d4;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 5px 15px rgba(6, 182, 212, 0.35);
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+  .developer-card {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    gap: 40px;
+  }
+
+  .developer-image {
+    width: 230px;
+    height: 230px;
+  }
+
+  .developer-content h1 {
+    font-size: 38px;
+  }
+
+  .developer-info {
+    text-align: left;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .developer-buttons,
+  .social-links {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .developer-page {
+    padding: 30px 15px;
+  }
+
+  .developer-card {
+    padding: 30px 18px;
+  }
+
+  .developer-image {
+    width: 190px;
+    height: 190px;
+  }
+
+  .developer-content h1 {
+    font-size: 31px;
+  }
+
+  .developer-content h2 {
+    font-size: 17px;
+  }
+
+  .developer-info {
+    grid-template-columns: 1fr;
+  }
+
+  .developer-buttons {
+    flex-direction: column;
+  }
+
+  .contact-button,
+  .portfolio-button {
+    width: 100%;
+  }
+}

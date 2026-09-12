@@ -1,0 +1,173 @@
+
+
+.connect-section {
+  margin-top: 30px;
+}
+
+.connect-section h3 {
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.connect-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+
+.connect-social {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 6px 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 8px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+
+
+.connect-social span {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+
+.connect-facebook span {
+  background-color: #1877f2;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.connect-facebook:hover {
+  color: #1877f2;
+  transform: translateY(-2px);
+}
+
+.connect-facebook:hover span {
+  transform: scale(1.1);
+  box-shadow: 0 3px 8px rgba(24, 119, 242, 0.4);
+}
+
+
+
+.connect-linkedin span {
+  background-color: #0a66c2;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.connect-linkedin:hover {
+  color: #0a66c2;
+  transform: translateY(-2px);
+}
+
+.connect-linkedin:hover span {
+  transform: scale(1.1);
+  box-shadow: 0 3px 8px rgba(10, 102, 194, 0.4);
+}
+
+
+
+
+.connect-tiktok span {
+  background-color: #000000;
+  font-size: 15px;
+}
+
+.connect-tiktok:hover {
+  color: #ff0050;
+  transform: translateY(-2px);
+}
+
+.connect-tiktok:hover span {
+  transform: scale(1.1);
+  box-shadow: 0 3px 8px rgba(255, 0, 80, 0.4);
+}
+
+
+
+.connect-email span {
+  background-color: #ea4335;
+  font-size: 13px;
+}
+
+.connect-email:hover {
+  color: #ea4335;
+  transform: translateY(-2px);
+}
+
+.connect-email:hover span {
+  transform: scale(1.1);
+  box-shadow: 0 3px 8px rgba(234, 67, 53, 0.4);
+}
+
+
+
+.connect-social:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+@media (max-width: 600px) {
+
+  .connect-section h3 {
+    font-size: 18px;
+  }
+
+  .connect-links {
+    gap: 6px;
+  }
+
+  .connect-social {
+    gap: 5px;
+    padding: 5px 7px;
+    font-size: 12px;
+  }
+
+  .connect-social span {
+    width: 23px;
+    height: 23px;
+    font-size: 11px;
+  }
+
+}
+
