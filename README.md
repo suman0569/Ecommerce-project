@@ -4,6 +4,9 @@ A modern full-stack e-commerce website built with the MERN Stack
 Baggage is a full-stack e-commerce platform where users can browse products, add items to cart, place orders, and make online payments.
 It also includes an **Admin Dashboard** for managing products, users, and orders.
 
+ 🌐 Live Demo
+
+Live Website: https://baggage-ecommerce.onrender.com/
 
 ## 🛠️ Tech Stack
 
